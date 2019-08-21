@@ -1,5 +1,3 @@
 FROM pawan4g/get-started:appConnect
-RUN mkdir /apps
-WORKDIR /apps
-COPY MyFirstApp.bar /apps
+COPY MyFirstApp.bar /temp
 RUN ace_compile_bars.sh
